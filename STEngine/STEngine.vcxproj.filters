@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Build">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Runtime">
+      <UniqueIdentifier>{e988eac7-08ad-44ab-9ca4-f4edd1e24ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\GUI">
+      <UniqueIdentifier>{226505fb-d3c2-4d49-a932-33d2bb4ece93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core">
+      <UniqueIdentifier>{7d737480-7072-431f-8976-31b49fdfcf72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Windows">
+      <UniqueIdentifier>{187c7242-bb26-4b91-bc47-c72ea514f9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\IOS">
+      <UniqueIdentifier>{34063884-b7bd-4642-ba03-e704bf7fd7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Android">
+      <UniqueIdentifier>{b6d54ee7-caa4-4f71-8c30-b920cfa7db59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Memory">
+      <UniqueIdentifier>{b3dc906e-0d08-40c5-b728-4668624c2ef2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Build\Rebuild.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="Build\Build.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="Build\Clean.bat">
+      <Filter>Build</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Runtime\Core\Windows\WindowsPlatform.h">
+      <Filter>Source\Runtime\Core\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\GUI\Widget.h">
+      <Filter>Source\Runtime\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\GUI\GUICore.h">
+      <Filter>Source\Runtime\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\Core\Platform.h">
+      <Filter>Source\Runtime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\Core\Core.h">
+      <Filter>Source\Runtime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\Core\GenericPlatform.h">
+      <Filter>Source\Runtime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\Core\Memory\STMemory.h">
+      <Filter>Source\Runtime\Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Runtime\Core\Memory\MemoryBase.h">
+      <Filter>Source\Runtime\Core\Memory</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Runtime\GUI\Widget.cpp">
+      <Filter>Source\Runtime\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

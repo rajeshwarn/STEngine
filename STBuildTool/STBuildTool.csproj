@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A0431AD-7FF9-469B-AB9E-2E6125116596}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>STBuildTool</RootNamespace>
+    <AssemblyName>STBuildTool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Binaries\DotNET\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Binaries\DotNET\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>..\Binaries\DotNET\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="RPCUtility">
+      <HintPath>..\Binaries\DotNET\RPCUtility.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\STBuildClient.cs" />
+    <Compile Include="Configuration\BuildConfiguration.cs" />
+    <Compile Include="Configuration\EngineConfiguration.cs" />
+    <Compile Include="Configuration\STBuildDeploy.cs" />
+    <Compile Include="Configuration\STBuildEditor.cs" />
+    <Compile Include="Configuration\STBuildGame.cs" />
+    <Compile Include="Configuration\STBuildPlatform.cs" />
+    <Compile Include="Configuration\STBuildBinary.cs" />
+    <Compile Include="Configuration\STBuildConficuration.cs" />
+    <Compile Include="Configuration\STBuildModule.cs" />
+    <Compile Include="Configuration\STBuildServer.cs" />
+    <Compile Include="Configuration\STBuildTarget.cs" />
+    <Compile Include="fastJSON\Formatter.cs" />
+    <Compile Include="fastJSON\Getters.cs" />
+    <Compile Include="fastJSON\JSON.cs" />
+    <Compile Include="fastJSON\JsonParser.cs" />
+    <Compile Include="fastJSON\JsonSerializer.cs" />
+    <Compile Include="fastJSON\Reflection.cs" />
+    <Compile Include="fastJSON\SafeDictionary.cs" />
+    <Compile Include="IOS\IOSProjectGenerator.cs" />
+    <Compile Include="IOS\IOSToolChain.cs" />
+    <Compile Include="IOS\UEBuildIOS.cs" />
+    <Compile Include="IOS\UEDeployIOS.cs" />
+    <Compile Include="System\ActionGraph.cs" />
+    <Compile Include="System\ActionHistory.cs" />
+    <Compile Include="System\CMakerfileGenerator.cs" />
+    <Compile Include="System\DictionaryLookupCache.cs" />
+    <Compile Include="System\Distcc.cs" />
+    <Compile Include="System\DynamicCompilation.cs" />
+    <Compile Include="System\JunkDeleter.cs" />
+    <Compile Include="System\LocalExecutor.cs" />
+    <Compile Include="System\MakefileGenerator.cs" />
+    <Compile Include="System\ModuleProcessingExeption.cs" />
+    <Compile Include="System\Plugins.cs" />
+    <Compile Include="System\ProjectFileGenerator.cs" />
+    <Compile Include="System\QMakefileGenerator.cs" />
+    <Compile Include="System\SNDBS.cs" />
+    <Compile Include="System\SourceFileSearch.cs" />
+    <Compile Include="System\STBuildTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\BuildException.cs" />
+    <Compile Include="System\BuildHostPlatform.cs" />
+    <Compile Include="System\CPPEnvironment.cs" />
+    <Compile Include="System\CPPHeaders.cs" />
+    <Compile Include="System\DependencyCache.cs" />
+    <Compile Include="System\ExternalExecution.cs" />
+    <Compile Include="System\FileItem.cs" />
+    <Compile Include="System\FlatCPPIncludeDependencyCache.cs" />
+    <Compile Include="System\LinkEnvironment.cs" />
+    <Compile Include="System\Project.cs" />
+    <Compile Include="System\ResponseFile.cs" />
+    <Compile Include="System\RPCUtilHelper.cs" />
+    <Compile Include="System\RulesCompiler.cs" />
+    <Compile Include="System\STPlatformProjectGenerator.cs" />
+    <Compile Include="System\Telemetry.cs" />
+    <Compile Include="System\ThirdPartyHeaderFinder.cs" />
+    <Compile Include="System\Unity.cs" />
+    <Compile Include="System\UProjectInfo.cs" />
+    <Compile Include="System\Utils.cs" />
+    <Compile Include="System\VCProject.cs" />
+    <Compile Include="System\VCProjectFileGenerator.cs" />
+    <Compile Include="System\VCSolutionOptions.cs" />
+    <Compile Include="System\XcodeProject.cs" />
+    <Compile Include="System\XcodeProjectFileGenerator.cs" />
+    <Compile Include="System\XGE.cs" />
+    <Compile Include="ToolChain\RemoteToolChain.cs" />
+    <Compile Include="ToolChain\STToolChain.cs" />
+    <Compile Include="Utilities\CopyrightVerify.cs" />
+    <Compile Include="Utilities\DictionaryExtensions.cs" />
+    <Compile Include="Utilities\GraphVisualization.cs" />
+    <Compile Include="Utilities\XmlConfigLoader.cs" />
+    <Compile Include="Windows\STBuildWindows.cs" />
+    <Compile Include="Windows\VCEnvironment.cs" />
+    <Compile Include="Windows\VCToolChain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

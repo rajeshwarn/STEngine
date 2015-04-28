@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema targetNamespace="https://www.unrealengine.com/BuildConfiguration" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="Configuration">
+		<complexType>
+			<all>
+				<element name="BuildConfiguration" minOccurs="0" maxOccurs="1">
+					<complexType>
+						<all>
+							<element name="bUseUnityBuild" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bForceUnityBuild" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="MinGameModuleSourceFilesForUnityBuild" type="int" minOccurs="0" maxOccurs="1" />
+							<element name="bUseFastMonoCalls" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="NumIncludedBytesPerUnityCPP" type="int" minOccurs="0" maxOccurs="1" />
+							<element name="bStressTestUnity" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCheckSystemHeadersForModification" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCheckExternalHeadersForModification" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bIgnoreOutdatedImportLibraries" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bDisableDebugInfo" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bOmitPCDebugInfoInDevelopment" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUsePDBFiles" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUsePCHFiles" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseActionHistory" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="MinFilesUsingPrecompiledHeader" type="int" minOccurs="0" maxOccurs="1" />
+							<element name="bForcePrecompiledHeaderForGameModules" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bPrintDebugInfo" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bPrintPerformanceInfo" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bLogDetailedActionStats" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bDeployAfterCompile" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bFlushBuildDirOnRemoteMac" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowXGE" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bXGEExport" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bShowXGEMonitor" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bStopXGECompilationAfterErrors" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowRemotelyCompiledPCHs" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowSNDBS" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bShouldDeleteAllOutdatedProducedItems" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseIncrementalLinking" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowLTCG" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bSupportEditAndContinue" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bOmitFramePointers" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="ProcessorCountMultiplier" type="double" minOccurs="0" maxOccurs="1" />
+							<element name="MaxProcessorCount" type="int" minOccurs="0" maxOccurs="1" />
+							<element name="BaseIntermediateFolder" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="bGeneratedSYMFile" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bStripSymbolsOnIOS" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCreateStubIPA" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCopyAppBundleBackToDevice" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseMallocProfiler" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bEnableCodeAnalysis" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseSharedPCHs" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseIncludeDependencyResolveCache" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bTestIncludeDependencyResolveCache" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bDebugBuildsActuallyUseDebugCRT" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCheckLicenseViolations" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bBreakBuildOnLicenseViolation" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseExperimentalFastDependencyScan" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseExperimentalFastBuildIteration" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowDistcc" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowDistccLocalFallback" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="DistccExecutablesPath" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="bRunUnrealCodeAnalyzer" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="UCAUsageThreshold" type="single" minOccurs="0" maxOccurs="1" />
+							<element name="UCAModuleToAnalyze" type="string" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+				<element name="STBuildConfiguration" minOccurs="0" maxOccurs="1">
+					<complexType>
+						<all>
+							<element name="bCompilePhysX" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileAPEX" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bRuntimePhysicsCooking" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileBox2D" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileICU" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bBuildEditor" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bBuildRequiresCookedData" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bBuildWithEditorOnlyData" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bBuildDeveloperTools" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bForceBuildTargetPlatforms" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bForceBuildShaderFormats" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileSimplygon" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileSteamOSS" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileMcpOSS" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileLeanAndMeanUE" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bGenerateExternalFileList" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bMergeExternalFileList" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bGenerateManifest" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bMergeManifests" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCleanProject" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bPrepForDeployment" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileAgainstEngine" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileAgainstCoreUObject" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bIncludeADO" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="UEThirdPartyDirectory" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="UEThirdPartySourceDirectory" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="UEThirdPartyBinariesDirectory" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="bForceHeaderGeneration" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bDoNotBuildUHT" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bFailIfGeneratedCodeChanges" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileRecast" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileSpeedTree" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bForceEnableExceptions" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bWithServerCode" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileWithStatsWithoutEngine" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileWithPluginSupport" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bUseLoggingInShipping" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompilePhysXVehicle" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileFreeType" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileForSize" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bAllowHotReloadFromIDE" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="bCompileCEF3" type="boolean" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+				<element name="RemoteToolChain" minOccurs="0" maxOccurs="1">
+					<complexType>
+						<all>
+							<element name="RemoteServerName" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="PotentialServerNames" minOccurs="0" maxOccurs="1">
+								<complexType>
+									<all>
+										<element name="Item" type="string" minOccurs="0" />
+									</all>
+								</complexType>
+							</element>
+							<element name="bUseRPCUtil" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="RSyncExe" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="SSHExe" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="SSHPrivateKeyOverridePath" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="RsyncAuthentication" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="SSHAuthentication" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="RSyncUsername" type="string" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+				<element name="IOSToolChain" minOccurs="0" maxOccurs="1">
+					<complexType>
+						<all>
+							<element name="bUseDangerouslyFastMode" type="boolean" minOccurs="0" maxOccurs="1" />
+							<element name="IOSSDKVersion" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="NonShippingArchitectures" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="ShippingArchitectures" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="BuildIOSVersion" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="XcodeDeveloperDir" type="string" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+				<element name="IOSPlatform" minOccurs="0" maxOccurs="1">
+					<complexType>
+						<all>
+							<element name="IOSArchitecture" type="string" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+				<element name="WindowsPlatform" minOccurs="0" maxOccurs="1">
+					<complexType>
+						<all>
+							<element name="SupportWindowsXPIfAvailable" type="boolean" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+			</all>
+		</complexType>
+	</element>
+</schema>
